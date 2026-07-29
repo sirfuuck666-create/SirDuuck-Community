@@ -1,188 +1,282 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
-    <head>
-        <meta charset+"UTF-8">
-
-        <meta
-            Name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        >
-
-        <title>SirDuuck Community</title>
-
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body>
-
-        <header class="cabecalho">
-            <div class="container cabecalho-conteudo">
-
-                <h1 class="logo">
-                    SirDuuck Community
-                </h1>
-
-                <nav class="menu">
-                    <a href="#inicio">Início</a>
-                    <a href="#publicacoes">Publicações</a>
-                    <a href="#categorias">Categorias</a>
-                    <a href="#sobre">Sobre</a>
-                </nav>
-
-            </div>
-        </header>
-
-        <main class="container">
-
-            <section id="inicio" class="apresentacao">
-
-                <h2>Bem-vindo à comunidade</h2>
-
-                <p>
-                    Um espaço para conversar sobre programação, jogos, tecnologia e projetos pessoais.
-                </p>
-
-                <button id="botaoPostagem">
-                    Criar publicação
-                </button>
-
-            </section>
-
-            <div class="conteudo">
-
-                <section id="publicacoes" class="area-publicacoes">
-                    <h2>Publicações recentes</h2>
-
-                    <article class="post">
-
-                        <h3>
-                            Voltando a estudar programação
-                        </h3>
-
-                        <p>
-                            Depois de basteante tempo parado,
-                            decidi voltar estudando HTML, CSS e JavaScript.
-                        </p>
-
-                        <span>
-                            Publicado por SirDuuck
-                        </span>
-
-                    </article>
-
-                    <article class="post">
-                        <h3>
-                            Meu primeiro projeto
-                        </h3>
-                        <p>
-                            Estou desenvolvendo um blog ou forum para praticar meu
-                            desenvolvimento web.
-                        </p>
-
-                        <span>
-                            Publicado por SirDuuck
-                        </span>
-
-                    </article>
-                    
-                    <article class="post">
-                        <h3>
-                            Qual linguagem estudar?
-                        </h3>
-
-                        <p>
-                            Depois de HTML, CSS e JavaScript,
-                            pretendo estudar uma linguagem para back-end.
-                        </p>
-
-                        <span>
-                            Publicado por Admin
-                        </span>
-                        
-                    </article>
-                </section>
-
-                <aside class="barra-lateral">
-
-
-                  <section id="categorias" class="bloco-lateral">
-
-                    <h2>Categorias</h2>
-
-                    <ul>
-
-                        <li>
-                            <a href="#">Programação</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Jogos</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Hardware</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Streaming</a>
-                        </li>
-                    </ul>
-                  </section>
-
-                    <section id="sobre" class="bloco-lateral">
-
-                        <h2>Sobre</h2>
-
-                        <p>
-                            Projeto criado pra praticar
-                            desenvolvimento web.
-                        </p>
-                        
-                        <section class="bloco-lateral">
-
-                            <h2>Redes Sociais</h2>
-
-                            <div class="links-redes">
-                        <a
-                            href="https://www.twitch.tv/sirduuck_creates"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>SirDuuck Community</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <a class="marca" href="#">
+                <span class="marca-destaque">SirDuuck</span>
+                Community
+            </a>
+            <nav class="menu-superior">
+                <a href="#inicio">Início</a>
+                <a href="#publicacoes">Publicações</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+        </div>
+    </header>
+    <div class="pagina">
+        <aside class="menu-lateral">
+            <nav class="navegacao-lateral">
+                <a class="ativo" href="#inicio">
+                    <span>⌂</span>
+                    Início
+                </a>
+                <a href="#publicacoes">
+                    <span>▤</span>
+                    Publicações
+                </a>
+                <a href="#categorias">
+                    <span>▦</span>
+                    Categorias
+                </a>
+                <a
+                    href="https://www.twitch.tv/sirduuck_creates"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>◈</span>
+                    Twitch
+                </a>
+                <a href="#projetos">
+                    <span>&lt;/&gt;</span>
+                    Projetos
+                </a>
+                <a
+                    href="https://discord.gg/unUFRhGMbb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>☵</span>
+                    Discord
+                </a>
+                <a href="#sobre">
+                    <span>ⓘ</span>
+                    Sobre
+                </a>
+            </nav>
+            <section class="redes-menu">
+                <h2>Siga-me</h2>
+                <div class="links-sociais">
+                    <a
+                        href="https://www.twitch.tv/sirduuck_creates"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Twitch
                     </a>
-
+                    <a
+                        href="https://www.instagram.com/sirduuck_creates"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                    Instagram
+                    </a>
                     <a
                         href="https://discord.gg/unUFRhGMbb"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                         Entrar no Discord
+                    Discord
                     </a>
-
-                    <a
-                        href="https://www.instagram.com/sirduuck_creates?igsh=MWRzczBpMGNxcTkyOQ=="
-                        target="_blank"
-                        rel="noopener noreferrer"
+                </div>
+            </section>
+        </aside>
+        <main class="conteudo-principal">
+            <section id="inicio" class="perfil">
+                <div class="banner-perfil"></div>
+                <div class="perfil-informacoes">
+                    <img
+                        class="avatar"
+                        src="img/img.png"
+                        alt="Avatar do SirDuuck"
                     >
-                         Me siga no IG
-                    </a>
-
+                    <div class="perfil-texto">
+                        <h1>
+                            SirDuuck
+                            <span class="verificado">✓</span>
+                        </h1>
+                        <p class="usuario">
+                            @SirDuuckCreates
+                        </p>
+                        <p class="descricao">
+                            Criador de conteúdo gamer, estudante de programação
+                            e sobrevivente ocasional de jogos souls-like.
+                        </p>
+                        <div class="perfil-links">
+                            <span>🎮 Games</span>
+                            <span>💻 Programação</span>
+                            <span>🦆 Quack</span>
+                        </div>
                     </div>
-
-                    </section>
-
-                    </section>
-                </aside>
-            </div>
+                </div>
+            </section>
+            <section class="estatisticas">
+    <a
+        class="estatistica"
+        href="https://github.com/sirfuuck666-create"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <strong id="quantidadeRepositorios">...</strong>
+        <span>Repositórios públicos</span>
+    </a>
+    <a
+        class="estatistica"
+        href="https://github.com/sirfuuck666-create?tab=followers"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <strong id="quantidadeSeguidores">...</strong>
+        <span>Seguidores no GitHub</span>
+    </a>
+    <div class="estatistica">
+        <strong>HTML, CSS e JS</strong>
+        <span>Estudos atuais</span>
+    </div>
+    <a
+        class="estatistica"
+        href="https://steamcommunity.com/profiles/76561199170698374/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <strong>Steam</strong>
+        <span>Ver perfil gamer</span>
+    </a>
+</section>
+            <section id="publicacoes" class="secao-publicacoes">
+                <h2 class="titulo-secao">
+                    Publicações recentes
+                </h2>
+                <article class="publicacao">
+                    <header class="publicacao-cabecalho">
+                        <img
+                            src="img/avatar.png"
+                            alt="Avatar do SirDuuck"
+                        >
+                        <div>
+                            <strong>SirDuuck</strong>
+                            <span>Agora</span>
+                        </div>
+                    </header>
+                    <div class="publicacao-conteudo">
+                        <p>
+                            Começando um novo projeto: uma comunidade gamer
+                            inspirada em perfis da Steam, Twitch e Discord.
+                        </p>
+                        <div class="publicacao-imagem">
+                            <span>Novo layout em desenvolvimento</span>
+                        </div>
+                    </div>
+                    <footer class="publicacao-acoes">
+                        <button type="button">♡ Curtir</button>
+                        <button type="button">◯ Comentar</button>
+                        <button type="button">↗ Compartilhar</button>
+                    </footer>
+                </article>
+                <article id="projetos" class="publicacao">
+                    <header class="publicacao-cabecalho">
+                        <img
+                            src="img/avatar.png"
+                            alt="Avatar do SirDuuck"
+                        >
+                        <div>
+                            <strong>SirDuuck</strong>
+                            <span>Projeto de programação</span>
+                        </div>
+                    </header>
+                    <div class="publicacao-conteudo">
+                        <p>
+                            Estudando HTML, CSS, JavaScript, Git e GitHub
+                            construindo este site do zero.
+                        </p>
+                        <div class="bloco-codigo">
+                            <code>
+                                const comunidade = "SirDuuck";
+                            </code>
+                        </div>
+                    </div>
+                </article>
+            </section>
         </main>
-
-        <footer class="rodape">
-
-            <p>
-                 © 2026 SirDuuck Community
-            </p>
-        </footer>
-
-        <script src="js/script.js"></script>
-    </body>
+        <aside class="barra-direita">
+            <section id="sobre" class="painel">
+                <h2>Sobre mim</h2>
+                <p>
+                    Gamer, criador de conteúdo e estudante de programação.
+                    Aqui você encontra projetos, lives e muita resenha.
+                </p>
+                <a class="botao-secundario" href="#publicacoes">
+                    Ver publicações
+                </a>
+            </section>
+            <section class="painel destaque-live">
+                <div class="painel-titulo">
+                    <h2>Próxima live</h2>
+                    <span>Em breve</span>
+                </div>
+                <div class="live-imagem">
+                    <strong>Souls-like</strong>
+                    <p>
+                        Uma jornada pacífica envolvendo mortes repetidas.
+                    </p>
+                </div>
+                <a
+                    class="botao-principal"
+                    href="https://www.twitch.tv/sirduuck_creates"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                 Acessar Twitch
+                </a>
+            </section>
+            <section id="categorias" class="painel">
+                <h2>Categorias</h2>
+                <ul class="lista-categorias">
+                    <li>
+                        <span>Souls-like</span>
+                        <strong>12</strong>
+                    </li>
+                    <li>
+                        <span>Programação</span>
+                        <strong>8</strong>
+                    </li>
+                    <li>
+                        <span>Lives</span>
+                        <strong>5</strong>
+                    </li>
+                    <li>
+                        <span>Hardware</span>
+                        <strong>4</strong>
+                    </li>
+                </ul>
+            </section>
+            <section class="painel discord">
+                <h2>Comunidade Discord</h2>
+                <p>
+                    Entre para conversar sobre jogos, programação e lives.
+                </p>
+                <a
+                    class="botao-discord"
+                    href="https://discord.gg/unUFRhGMbb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                Entrar no Discord
+                </a>
+            </section>
+        </aside>
+    </div>
+    <script src="js/script.js"></script>
+</body>
 </html>
