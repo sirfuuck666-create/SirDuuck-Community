@@ -1,0 +1,162 @@
+:root {
+    --fundo: #03060d;
+    --painel: rgba(5, 11, 22, 0.96);
+    --painel-claro: rgba(10, 20, 38, 0.96);
+
+    --azul: #00b7ff;
+    --azul-claro: #65d9ff;
+    --amarelo: #ffc400;
+
+    --branco: #f5f7fa;
+    --cinza: #9ca7b8;
+
+    --borda: rgba(0, 183, 255, 0.25);
+}
+
+/*confi geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco);
+    background: 
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.92) 25%,
+            rgba(0, 0, 0, 0.92) 75%,
+            rgba(0, 0, 0, 0.15)
+        ),
+        url(../img/Fundo.png);
+       
+          background-size: cover;
+          background-position: center;
+         background-attachment: fixed;
+}
+
+a {
+    color: inherit;
+}
+
+/*cabeçalho*/
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 64px;
+    background-color: rgba(2, 5, 12, 0.96);
+    border-bottom: 1px solid var(--borda);
+    backdrop-filter: blur(10px);
+}
+
+.cabecalho-conteudo {
+    width: min(1320px, calc(100% - 30px));
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.marca {
+    color: var(--branco);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.marca-destaque {
+    color: var(--azul);
+}
+
+.menu-superior {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu-superior a {
+    color: var(--cinza);
+
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menu-superior a:hover {
+    color: var(--azul);
+}
+
+/*Tres colunas*/
+
+.pagina {
+    width: min(1320px, calc(100% - 30px));
+    margin: 12px auto 40px;
+    display: grid;
+    grid-template-columns: 
+        220px
+        minmax(0, 1fr)
+        290px;
+        gap: 12px;
+        align-items: start;
+}
+
+.conteudo-principal {
+    min-width: 0;
+}
+
+/*Banner*/
+
+.banner-perfil {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.banner-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+/*Olhos animados*/
+
+.banner-animado {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.banner-base {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.pupila {
+   position: absolute;
+   width: 4.5%;
+   height: auto;
+   object-fit: contain;
+   z-index: 2;
+   pointer-events: none;
+}
+.pupila-esquerda {
+    left: 67.8%;
+    top: 32%;
+}
+.pupila-direita {
+    left: 74.4%;
+    top: 32%;
+}
