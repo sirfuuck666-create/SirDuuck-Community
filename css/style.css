@@ -1,3 +1,16 @@
+/*
+=========================================================
+Projeto.....: SirDuuck Community
+Autor.......: SirDuuck Creates
+GitHub......: github.com/sirfuuck666-create
+Versão......: 0.0.5
+Descrição...: Estilos principais do site.
+=========================================================
+*/
+
+
+
+
 :root {
     --fundo: #03060d;
     --painel: rgba(5, 11, 22, 0.96);
@@ -68,6 +81,67 @@ a {
     gap: 30px;
 }
 
+
+/*FOTO DE PERFIL*/
+
+
+.perfil {
+    overflow: hidden;
+    background-color: var(--painel);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+}
+
+.perfil-informacoes {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 3px solid var(--azul);
+    border-radius: 50%;
+    box-shadow: 0 0 18px rgba(0, 183, 255, 0.4);
+}
+
+.perfil-texto h1 {
+    margin-bottom: 4px;
+    font-size: 28px;
+}
+
+.usuario {
+    color: var(--cinza);
+}
+
+.descricao {
+    margin-top: 12px;
+    color: var(--branco);
+    line-height: 1.5;
+}
+
+.perfil-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.perfil-links span {
+    padding: 6px 10px;
+    color: var(--azul-claro);
+    background-color: rgba(0, 183, 255, 0.1);
+    border: 1px solid var(--borda);
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/*MARCA*/
+
 .marca {
     color: var(--branco);
     font-size: 22px;
@@ -79,6 +153,8 @@ a {
     color: var(--azul);
 }
 
+
+/*MENU*/
 .menu-superior {
     display: flex;
     align-items: center;
@@ -96,6 +172,122 @@ a {
 
 .menu-superior a:hover {
     color: var(--azul);
+}
+
+/*MENU LATERAL ESQUERDO */
+
+.menu-lateral {
+    position: sticky;
+    top: 76px;
+    padding: 18px;
+    background-color: var(--painel);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+}
+
+.navegacao-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.navegacao-lateral a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 12px;
+    color: var(--cinza);
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.navegacao-lateral a:hover,
+.navegacao-lateral a.ativo {
+    color: var(--branco);
+    background-color: rgba(0, 183, 255, 0.12);
+}
+
+.redes-menu {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid var(--borda);
+}
+
+.redes-menu h2 {
+    margin-bottom: 12px;
+    color: var(--azul);
+    font-size: 16px;
+}
+
+.links-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.links-sociais a {
+    padding: 9px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links-sociais a:hover {
+    color: var(--fundo);
+    background-color: var(--azul);
+}
+
+/*MENU LATERAL ESQUERDO */
+
+.barra-direita{
+    position: sticky;
+    top: 76px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.painel {
+    padding: 18px;
+    background-color: var(--painel);
+    border: 1px solid var(--borda);
+}
+
+.painel h2 {
+    margin-bottom: 10px;
+    color: var(--azul);
+    font-size: 18px;
+}
+
+.painel p {
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.painel a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--azul-claro);
+    text-decoration: none;
+}
+
+.painel a:hover {
+    text-decoration: underline;
+}
+
+.lista-categorias {
+    list-style: none;
+}
+
+.lista-categorias li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: var(--cinza);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /*Tres colunas*/
@@ -116,47 +308,211 @@ a {
     min-width: 0;
 }
 
-/*Banner*/
-
-.banner-perfil {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-}
-.banner-perfil img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-
-/*Olhos animados*/
+/*BANNER ANIMADO*/
 
 .banner-animado {
     position: relative;
+
     width: 100%;
+    height: 300px;
+
     overflow: hidden;
 }
-.banner-base {
+
+/* Apenas a imagem principal do banner */
+.banner-animado > .banner-base {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/*PUPILAS */
+
+.banner-animado > .pupila {
+    position: absolute;
+
+    width: 4.5%;
+    height: auto;
+
+    z-index: 2;
+    pointer-events: none;
+}
+
+.pupila-esquerda {
+    left: 68%;
+    top: 35%;
+}
+
+.pupila-direita {
+    left: 74.6%;
+    top: 35%;
+}
+
+/*ESTATISTICAS DO PERFIL*/
+
+.estatisticas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 12px;
+    background-color: var(--painel);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.estatisticas {
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    color: var(--branco);
+    text-align: center;
+    text-decoration: none;
+}
+
+.estatisticas:not(:last-child) {
+    border-right: 1px solid var(--borda);
+}
+
+.estatisticas strong {
+    display: block;
+    color: var(--azul);
+    font-size: 16px;
+}
+
+.estatisticas span {
+    display: block;
+    margin-top: 5px;
+    color: var(--cinza);
+    font-size: 11px;
+}
+
+a.estatisticas {
+    transition: 0.2s;
+}
+
+a.estatisticas:hover {
+    background-color: rgba(0, 183, 255, 0.1);
+}
+
+
+/*PUBLICAÇÕES*/
+
+.secao-publicacoes {
+    margin-top: 18px;
+}
+
+.titulo-secao {
+    margin-bottom: 12px;
+    color: var(--branco);
+    font-size: 20px;
+}
+
+.publicacao {
+    margin-bottom: 14px;
+    padding: 18px;
+    background-color: var(--painel);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+
+.publicao-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.publicao-cabecalho img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border: 1px solid var(--azul);
+    border-radius: 50%;
+}
+
+.publicao-cabecalho strong,
+.publicao-cabecalho span {
+    display: block;
+}
+
+.publicao-cabecalho span {
+    margin-top: 3px;
+    color: var(--cinza);
+    font-size: 11px;
+}
+
+.publicao-cabecalho p {
+    margin: 15px 0;
+    color: var(--branco);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.publicacao-imagem {
+    min-height: 210px;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent), url(../img/banner/banner2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.publicacao-imagem span {
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.publicacao-acoes {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.publicacao-acoes button {
+    padding: 8px 12px;
+    color: var(--cinza);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor:  pointer;
+    transition: 0.2s;
+}
+
+.publicacao-acoes button:hover {
+    color: var(--azul);
+    background-color: rgba(0, 183, 255, 0.1);
+    border-color: var(--borda);
+}
+
+.bloco-codigo {
+    padding: 16px;
+    color: var(--azul-claro);
+    background-color: #02050a;
+    border: 1px solid var(--borda);
+    border-style: 8px;
+    overflow-x: auto;
+}
+
+.publicacao-imagem {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--borda);
+    margin: 15px 0;
+}
+
+.publicacao-imagem img {
     width: 100%;
     height: auto;
     display: block;
-}
-.pupila {
-   position: absolute;
-   width: 4.5%;
-   height: auto;
-   object-fit: contain;
-   z-index: 2;
-   pointer-events: none;
-}
-.pupila-esquerda {
-    left: 67.8%;
-    top: 32%;
-}
-.pupila-direita {
-    left: 74.4%;
-    top: 32%;
+    object-fit: cover;
 }
